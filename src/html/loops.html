@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Loops</title>
+</head>
+<body>
+
+<script>
+    function sleep(ms) {
+        return new Promise(resolve => setTimeout(resolve, ms));
+    }
+
+    async function countUp() {
+
+        for (i = 1; i < 11; i++) {
+            document.getElementById("exampleLoops").innerHTML = i;
+            await sleep(1000)
+        }
+
+    }
+
+</script>
+
+<h1>Loops Example</h1>
+<p id="exampleLoops">You haven't pressed go yet.</p>
+
+<button type="button" onclick="countUp()">Count to 10</button>
+
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Switch</title>
+</head>
+<body>
+
+<script>
+
+    function exampleSwitchFunction() {
+
+        var day;
+
+        switch (new Date().getDay()) {
+            case 0:
+                day = "Sunday";
+                break;
+            case 1:
+                day = "Monday";
+                break;
+            case 2:
+                day = "Tuesday";
+                break;
+            case 3:
+                day = "Wednesday";
+                break;
+            case 4:
+                day = "Thursday";
+                break;
+            case 5:
+                day = "Friday";
+                break;
+            case 6:
+                day = "Saturday";
+        }
+
+        document.getElementById("exampleConditionFunction").innerHTML = "Today is " + day;
+    }
+
+    function exampleIfFunction() {
+
+        var partOfDay="";
+        var hour = new Date().getHours();
+
+        if (hour < 12) {
+            partOfDay = "Good morning";
+        } else if (hour < 18) {
+            partOfDay = "Good afternoon";
+        } else {
+            partOfDay = "Good evening"
+        }
+
+        document.getElementById("exampleConditionFunction").innerHTML = partOfDay;
+    }
+
+
+</script>
+
+<h1>Conditions Examples</h1>
+<p id="exampleConditionFunction">You haven't pressed the button yet.</p>
+
+<button type="button" onclick="exampleIfFunction()">Run the if</button>
+<button type="button" onclick="exampleSwitchFunction()">Run the switch</button>
+
+
+</body>
+</html>
