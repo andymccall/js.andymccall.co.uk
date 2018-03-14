@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Objects</title>
+</head>
+<body>
+
+<script>
+    var person1 = {
+        firstName:"John",
+        lastName:"Doe",
+        age:50,
+        eyeColor:"Blue"
+    };
+
+    var person2 = {
+        firstName:"Andy",
+        lastName:"McCall",
+        age:40,
+        eyeColor:"Grey"
+    };
+
+    function exampleShowPersonDetails(funcPerson) {
+
+        document.getElementById("personDetailsFirstName").innerHTML = "First Name: " + this[funcPerson].firstName;
+        document.getElementById("personDetailsLastName").innerHTML = "Last Name: " + this[funcPerson].lastName;
+        document.getElementById("personDetailsAge").innerHTML = "Age: " + this[funcPerson].age;
+        document.getElementById("personDetailsEyeColour").innerHTML = "Eye Colour: " + this[funcPerson].eyeColor;
+    }
+
+    function getPerson() {
+        var selectedPerson = document.getElementById('selectedPerson');
+        var funcPerson = selectedPerson.options[selectedPerson.selectedIndex].value;
+        return funcPerson;
+    }
+
+</script>
+
+<p id="personDetailsFirstName">First Name: </p>
+<p id="personDetailsLastName">Last Name: </p>
+<p id="personDetailsAge">Age: </p>
+<p id="personDetailsEyeColour">Eye Colour: </p>
+
+<select id="selectedPerson">
+    <option value="person1">Person 1</option>
+    <option value="person2">Person 2</option>
+</select>
+
+<button type="button" onclick="exampleShowPersonDetails(getPerson())">Show person details</button>
+
+</body>
+</html>
