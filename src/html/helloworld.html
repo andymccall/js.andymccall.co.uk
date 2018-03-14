@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <body>
+
+    <h2>Hello World JS Application!</h2>
+
+    <p>
+            <button type="button"
+                    onclick="document.getElementById('helloWorld').innerHTML = 'Hello World!'">
+                Click Me!
+            </button>
+
+            <p id="helloWorld"></p>
+
+    </p>
+
+    <p>
+
+        <button type="button"
+                onclick="document.getElementById('helloWorldImage').src='../resources/images/helloWorld1.png'">
+            Image 1
+        </button>
+
+        <p><img id="helloWorldImage" src="../resources/images/helloWorld1.png" style="width:100px; height:100px"></p>
+
+        <button type="button"
+                onclick="document.getElementById('helloWorldImage').src='../resources/images/helloWorld2.png'">
+            Image 2
+        </button>
+
+    </p>
+
+    <p>
+
+        <button type="button"
+                onclick="document.getElementById('helloWorldSize').style.fontSize='35px'">
+            Bigger
+        </button>
+
+        <p id="helloWorldSize" style="font-size: 25px">Hello World!</p>
+
+        <button type="button"
+                onclick="document.getElementById('helloWorldSize').style.fontSize='25px'">
+            Smaller
+        </button>
+
+    </p>
+
+    <p>
+        <button type="button"
+                onclick="document.getElementById('helloWorldHide').style.display='none'">Hide</button>
+
+        <p id="helloWorldHide" style="font-size: 25px">Hello World!</p>
+
+
+        <button type="button"
+                onclick="document.getElementById('helloWorldHide').style.display='block'">Show</button>
+
+    </p>
+
+    </body>
+</html>

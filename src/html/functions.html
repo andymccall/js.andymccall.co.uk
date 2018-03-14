@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        function exampleHeadFunction() {
+            document.getElementById("exampleFunction").innerHTML = "You've run the function in head!";
+        }
+
+        function exampleWithReturn() {
+            return "This is the return of the function!"
+        }
+
+        function exampleWithReturnCaller() {
+            document.getElementById("exampleFunction").innerHTML = exampleWithReturn();
+        }
+
+    </script>
+
+    <script src="../js/externalFunction.js"></script>
+
+</head>
+
+<body>
+
+<script>
+    function exampleBodyFunction() {
+        document.getElementById("exampleFunction").innerHTML = "You've run the function in body!";
+    }
+</script>
+
+<h1>Function Example</h1>
+    <p id="exampleFunction">You haven't run a function yet.</p>
+    <button type="button" onclick="exampleHeadFunction()">Run the function in head</button>
+    <button type="button" onclick="exampleBodyFunction()">Run the function in body</button>
+    <button type="button" onclick="exampleExternalFunction()">Run the external function</button>
+    <button type="button" onclick="exampleWithReturnCaller()">Run the function with a return</button>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Statements</title>
+</head>
+<body>
+
+<p id="statementExample">Click to see the result of the statements...</p>
+
+<script>
+    var x, y, z;
+    x = 5;
+    y = 6;
+    z = x + y;
+
+    function statementFunction() {
+        document.getElementById("statementExample").innerHTML = z;
+    }
+
+</script>
+
+<button type="button"
+        onclick=statementFunction()>
+    Statement Results
+</button>
+
+</body>
+</html>
