@@ -1,4 +1,4 @@
-function solution(N) {
+function BinaryGapSolution(N) {
 
     // Convert the number to a binary string...
     var binary = N.toString(2);
