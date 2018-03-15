@@ -20,12 +20,51 @@
 
     }
 
+    function generateTable(number)
+        {
+            var myVar = number;
+            var myString = "";
+            for (i=1; i<=10; i++) {
+                myString += i+ " x " +myVar+ " = " +(i*myVar)+ "<br/>";
+            }
+            document.getElementById("exampleLoopsTable").innerHTML = myString;
+        }
+
+    function generateDropDown() {
+
+        var tableString = "<select id=\"selectedPerson\">";
+
+        for (i=1; i<=10; i++) {
+            tableString += "<option value=" + i + ">" + i + "</option>";
+        }
+
+        tableString += "</select>";
+
+        document.getElementById("exampleLoopsTableDropDown").innerHTML = tableString;
+
+    }
+
+    function getNumber() {
+        var selectedNumber = document.getElementById('selectedPerson');
+        var funcNumber = selectedNumber.options[selectedNumber.selectedIndex].value;
+
+        return parseInt(funcNumber);
+    }
+
 </script>
 
 <h1>Loops Example</h1>
 <p id="exampleLoops">You haven't pressed go yet.</p>
 
-<button type="button" onclick="countUp()">Count to 10</button>
+<p><button type="button" onclick="countUp()">Count to 10</button></p>
+
+Select multiplication table to display: <p id="exampleLoopsTableDropDown"></p>
+
+<script>generateDropDown()</script>
+
+<p><button type="button" onclick="generateTable(getNumber())">Create multiplication table</button></p>
+
+<p id="exampleLoopsTable"></p>
 
 </body>
 </html>
