@@ -26,3 +26,7 @@ function solution(N) {
     return gap;
 
 }
+
+module.exports = {
+    solution
+}
