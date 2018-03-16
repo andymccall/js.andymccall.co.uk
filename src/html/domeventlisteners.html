@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM Event Listeners</title>
+</head>
+<body>
+
+<h2>DOM Event Listeners JS Application!</h2>
+
+<p id="exampleFunction1">No click yet...</p>
+<p id="exampleFunction2">No click yet...</p>
+<p id="exampleFunction3">Click the button below...</p>
+<button id="eventButton" type="button">One Button, Two Events</button>
+
+<script>
+    document.getElementById("eventButton").addEventListener("click", exampleFunction1);
+    document.getElementById("eventButton").addEventListener("click", exampleFunction2);
+    document.getElementById("eventButton").addEventListener("click", exampleFunction3);
+    document.getElementById("eventButton").addEventListener("mouseover", exampleFunction4);
+    document.getElementById("eventButton").addEventListener("mouseout", exampleFunction5);
+
+    function exampleFunction1() {
+        document.getElementById("exampleFunction1").innerHTML = "One event in the HTML is worth...";
+    }
+
+    function exampleFunction2() {
+        document.getElementById("exampleFunction2").innerHTML = "...two events in the DOM!";
+    }
+
+    function exampleFunction3() {
+        document.getElementById("exampleFunction3").innerHTML = "Good click!";
+    }
+
+    function exampleFunction4() {
+        document.getElementById("exampleFunction3").innerHTML = "Go on! Click it!";
+    }
+
+    function exampleFunction5() {
+        document.getElementById("exampleFunction3").innerHTML = "Click the button below...";
+    }
+
+</script>
+
+</body>
+</html>
