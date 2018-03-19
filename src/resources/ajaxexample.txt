@@ -1,0 +1,5 @@
+This text
+
+is loaded from a file
+
+via a XmlHttpRequest
