@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cookies JS Application</title>
+
+    <link rel="stylesheet" type="text/css" href="../css/cookies.css">
+
+</head>
+<body onload="manageButtons()">
+
+<h2>Cookies JS Application!</h2>
+
+<p>Please enter some text to store in the JSCookie:</p>
+
+<div class="container">
+    <input id="cookieValue" type="text" placeholder="Enter some text" name="cookieValue" required>
+    <p class="message" id="message">&nbsp;</p>
+    <button id="createButton" type="button" onclick="createCookie()">Create Cookie</button>
+    <button id="readButton" type="button" onclick="readCookie()">Read Cookie</button>
+    <button id="deleteButton" type="button" onclick="deleteCookie()">Delete Cookie</button>
+</div>
+
+<script src="../js/cookies.js"></script>
+
+</body>
+</html>
