@@ -1,6 +1,7 @@
 div.body {
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 48px;
     border: 1px solid gray;
     padding: 10px;
     width: 216px;
@@ -21,6 +22,7 @@ div.display {
     background-color: #7d8c73;
     border-radius: 2px;
     box-shadow: 1px 2px black;
+    line-height: 0px;
 }
 
 div.buttons {
@@ -83,12 +85,9 @@ div.solar {
 
 p.digits {
     text-align: right;
-    font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
-    font-size: 20px;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: 400;
-    line-height: 20px;
+    font-size: 48px;
+    font-family: 'Segment7Standard';
+    margin-top: 28px
 }
 
 button {
@@ -98,7 +97,10 @@ button {
     height: 42px;
     border-radius: 8px;
     margin: 3px;
+}
 
+.button:hover {
+    background-color: #3e8e41
 }
 
 .redButton {
@@ -107,10 +109,30 @@ button {
     box-shadow: 1px 2px #751111;
 }
 
+.redButton:hover {
+    background-color: #d82b2b
+}
+
+.redButton:active {
+    background-color: firebrick;
+    box-shadow: 0px 0px;
+    transform: translateY(2px);
+}
+
 .whiteButton {
     background-color: whitesmoke;
     color: black;
     box-shadow: 1px 2px #c1bfbf;
+}
+
+.whiteButton:hover {
+    background-color: #ffffff
+}
+
+.whiteButton:active {
+    background-color: whitesmoke;
+    box-shadow: 0px 0px;
+    transform: translateY(2px);
 }
 
 .rightButton {
