@@ -1,0 +1,236 @@
+div.body {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    border: 1px solid gray;
+    padding: 10px;
+    width: 216px;
+    background-color: cornflowerblue;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    box-shadow: 2px 4px #4567a5;
+}
+
+div.display {
+    grid-row: 1;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    border: 1px solid black;
+    width: 100%;
+    background-color: #7d8c73;
+    border-radius: 2px;
+    box-shadow: 1px 2px black;
+}
+
+div.buttons {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+hr.buttonDivide {
+    grid-row: 4;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    width: 100%;
+    border-color: dodgerblue;
+}
+
+p.brand {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row: 2;
+    text-align: left;
+    font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+    font-size: 16px;
+    font-style: normal;
+    font-variant: normal;
+    line-height: 0px;
+    color: white;
+    letter-spacing: -2px;
+    text-shadow: 1px 1px grey;
+}
+
+p.model {
+    grid-row: 2;
+    grid-column-start: 3;
+    grid-column-end: 5;
+    text-align: right;
+    font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+    font-size: 22px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: bold;
+    line-height: 0px;
+    color: white;
+    margin-top: 18px;
+    text-shadow: 1px 1px grey;
+}
+
+div.solar {
+    grid-row: 3;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    border: 1px solid black;
+    width: 120px;
+    background-color: darkred;
+    border-radius: 1px;
+    height: 30px;
+    margin-top: -5px;
+    overflow: hidden;
+    box-shadow: 1px 1px black;
+}
+
+p.digits {
+    text-align: right;
+    font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+    font-size: 20px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+    width: 47px;
+    height: 42px;
+    border-radius: 8px;
+    margin: 3px;
+
+}
+
+.redButton {
+    background-color: firebrick;
+    color: white;
+    box-shadow: 1px 2px #751111;
+}
+
+.whiteButton {
+    background-color: whitesmoke;
+    color: black;
+    box-shadow: 1px 2px #c1bfbf;
+}
+
+.rightButton {
+    margin-left: 10px;
+    justify-self: end;
+}
+
+.minusPlusButton {
+    grid-row: 5;
+    grid-column: 1;
+}
+
+.squareRootButton {
+    grid-row: 5;
+    grid-column: 2;
+}
+
+.percentButton {
+    grid-row: 5;
+    grid-column: 3;
+}
+
+.divideButton {
+    grid-row: 5;
+    grid-column: 4;
+}
+
+.memoryRecallButton {
+    grid-row: 6;
+    grid-column: 1;
+}
+
+.memoryMinusButton {
+    grid-row: 6;
+    grid-column: 2;
+}
+
+.memoryAddButton {
+    grid-row: 6;
+    grid-column: 3;
+}
+
+.multiplyButton {
+    grid-row: 6;
+    grid-column: 4;
+}
+
+.numberButton7 {
+    grid-row: 7;
+    grid-column: 1;
+}
+
+.numberButton8 {
+    grid-row: 7;
+    grid-column: 2;
+}
+
+.numberButton9 {
+    grid-row: 7;
+    grid-column: 3;
+}
+
+.minusButton {
+    grid-row: 7;
+    grid-column: 4;
+}
+
+.numberButton4 {
+    grid-row: 8;
+    grid-column: 1;
+}
+
+.numberButton5 {
+    grid-row: 8;
+    grid-column: 2;
+}
+
+.numberButton6 {
+    grid-row: 8;
+    grid-column: 3;
+}
+
+.plusButton {
+    grid-row: 8;
+    grid-column: 4;
+}
+
+.numberButton1 {
+    grid-row: 9;
+    grid-column: 1;
+}
+
+.numberButton2 {
+    grid-row: 9;
+    grid-column: 2;
+}
+
+.numberButton3 {
+    grid-row: 9;
+    grid-column: 3;
+}
+
+.equalsButton {
+    grid-column: 4;
+    grid-row-start: 9;
+    grid-row-end: 11;
+    height: 92px;
+}
+
+.oncButton {
+    grid-row: 10;
+    grid-column: 1;
+}
+
+.numberButton0 {
+    grid-row: 10;
+    grid-column: 2;
+}
+
+.pointButton {
+    grid-row: 10;
+    grid-column: 3;
+}

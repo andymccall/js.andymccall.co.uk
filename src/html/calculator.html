@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+
+    <link rel="stylesheet" type="text/css" href="../css/calculator.css">
+
+</head>
+<body onload="initCalculator()">
+
+
+<div class="body">
+
+    <div class="display">
+        <p id="digits" class="digits">0</p>
+    </div>
+
+    <p class="brand">TEXAS INSTRUMENTS</p>
+    <p class="model">TI-108</p>
+
+    <div class="solar"></div>
+
+    <hr class="buttonDivide">
+
+    <button class="button redButton minusPlusButton" type="operationButton" onclick="minusPlusButton()">&#x2213;</button>
+    <button class="button redButton squareRootButton" type="operationButton" onclick="squareRootButton()">&#x0221A;</button>
+    <button class="button redButton squareRootButton" type="operationButton" onclick="squareRootButton()">&#x0221A;</button>
+    <button class="button redButton percentButton" type="operationButton" onclick="percentButton()">%</button>
+    <button class="button redButton rightButton divideButton" type="operationButton" onclick="divideButton()">&divide;</button>
+
+    <button class="button redButton memoryRecallButton" type="memoryButton" onclick="memoryRecallButton()">MRC</button>
+    <button class="button redButton memoryMinusButton" type="memoryButton" onclick="memoryMinusButton()">M-</button>
+    <button class="button redButton memoryAddButton" type="memoryButton" onclick="memoryAddButton()">M+</button>
+    <button class="button redButton rightButton multiplyButton" type="operationButton" onclick="multiplyButton()">&times;</button>
+
+    <button class="button whiteButton numberButton7" type="numberButton" onclick="numberButton(7)">7</button>
+    <button class="button whiteButton numberButton8" type="numberButton" onclick="numberButton(8)">8</button>
+    <button class="button whiteButton numberButton9" type="numberButton" onclick="numberButton(9)">9</button>
+    <button class="button redButton rightButton minusButton" type="operationButton" onclick="minusButton()">&minus;</button>
+
+    <button class="button whiteButton numberButton4" type="numberButton" onclick="numberButton(4)">4</button>
+    <button class="button whiteButton numberButton5" type="numberButton" onclick="numberButton(5)">5</button>
+    <button class="button whiteButton numberButton6" type="numberButton" onclick="numberButton(6)">6</button>
+    <button class="button redButton rightButton plusButton" type="operationButton" onclick="plusButton()">&plus;</button>
+
+    <button class="button whiteButton numberButton1" type="numberButton" onclick="numberButton(1)">1</button>
+    <button class="button whiteButton numberButton2" type="numberButton" onclick="numberButton(2)">2</button>
+    <button class="button whiteButton numberButton3" type="numberButton" onclick="numberButton(3)">3</button>
+    <button class="button redButton rightButton equalsButton" type="operationButton" onclick="equalsButton()">=</button>
+
+    <button class="button redButton oncButton" type="functionButton" onclick="oncButton()">ON/C</button>
+    <button class="button whiteButton numberButton0" type="numberButton" onclick="numberButton(0)">0</button>
+    <button class="button whiteButton pointButton" type="numberButton" onclick="pointButton()">.</button>
+
+</div>
+
+<br>
+
+<script src="../js/calculator.js"></script>
+
+</body>
+</html>

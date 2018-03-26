@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CRUD JS Application</title>
+
+    <link rel="stylesheet" type="text/css" href="../css/crudform.css">
+
+</head>
+<body onload="manageButtons()">
+
+<div class="container">
+    <form name="personEntry" action="submitRecord" method="post">
+        <p class="section">Personal Details</p>
+        <label for="firstNameInput">First Name</label>
+        <input id="firstNameInput" type="text" placeholder="First name" name="firstNameInput" required><br>
+
+        <label for="lastNameInput">Last Name</label>
+        <input id="lastNameInput" type="text" placeholder="Last name" name="lastNameInput" required><br>
+
+        <hr>
+
+        <p class="section">Contact Details</p>
+        <label for="addressLine1Input">Address</label>
+        <input id="addressLine1Input" type="text" placeholder="Address line 1" name="addressLine1Input" required><br>
+
+        <label for="addressLine1Input">&nbsp;</label>
+        <input id="addressLine2Input" type="text" placeholder="Address line 2" name="addressLine2Input" required><br>
+
+        <label for="addressLine3Input">Town or City</label>
+        <input id="addressLine3Input" type="text" placeholder="Town or City" name="addressLine3Input" required><br>
+
+        <label for="addressLine4Input">County</label>
+        <input id="addressLine4Input" type="text" placeholder="County" name="addressLine4Input" required><br>
+
+        <label for="addressLine5Input">Postcode</label>
+        <input id="addressLine5Input" type="text" placeholder="Postcode" name="addressLine5Input" required><br>
+
+    </form>
+</div>
+    <button id="save" type="button" onclick="save()">Save</button>
+    <button id="clear" type="button" onclick="clear()">Clear</button>
+    <button id="search" type="button" onclick="search()">Search</button>
+
+
+
+<script src="../js/crudform.js"></script>
+
+</body>
+</html>
