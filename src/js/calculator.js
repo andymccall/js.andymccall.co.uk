@@ -1,6 +1,7 @@
 var tempNumber = 0;
 var clearOnNextInput = true;
 var quantityOfNumbers = 0;
+var pointUsed = false;
 
 function initCalculator() {
 
@@ -9,7 +10,7 @@ function initCalculator() {
 function getExistingDigits() {
     var p = document.getElementById('digits');
     var text = p.textContent;
-    return Number(text);
+    return text;
 }
 
 function numberButton(buttonPressed) {
@@ -51,7 +52,15 @@ function equalsButton() {
 }
 
 function oncButton() {
+    pointUsed = false;
     quantityOfNumbers = 0;
     document.getElementById("digits").innerText = "0";
     document.getElementById("digits").style.fontSize = "48px";
+}
+
+function pointButton() {
+    if (!pointUsed) {
+        pointUsed = true;
+        numberButton(".");
+    }
 }
